@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лана Томашевская – Таро & Обучение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            color: #333;
+            transition: all 0.5s ease;
+        }
+        .dark-mode {
+            background: linear-gradient(to bottom, #212121, #424242);
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9800;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+        .tiktok { background: #000; }
+        .facebook { background: #1877F2; }
+        .instagram { background: #E1306C; }
+        .telegram { background: #0088cc; }
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .dark-mode .contact-form {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #ff9800;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #e68900;
+        }
+        .toggle-theme {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #607d8b;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>✨ Лана Томашевская – Таро, Обучение, Помощь ✨</header>
+
+
+    <div class="container">
+        <p>Добро пожаловать! Здесь вы найдете магию Таро, уникальные расклады и обучение.</p>
+
+
+        <h3>🔮 Социальные сети:</h3>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@tarolanatomashevska" class="tiktok" target="_blank">TikTok</a>
+            <a href="https://www.facebook.com/share/1GxfL3eZMm" class="facebook" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/lana__tomashevskaya" class="instagram" target="_blank">Instagram</a>
+            <a href="https://t.me/zvezdy_govoryt" class="telegram" target="_blank">Telegram</a>
+        </div>
+
+
+        <h3>📩 Свяжитесь со мной:</h3>
+        <div class="contact-form">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <button class="toggle-theme" onclick="toggleTheme()">🌙 Переключить тему</button>
+
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Спасибо! Ваше сообщение отправлено.");
+        });
+    </script>
+
+
+</body>
+</html>
